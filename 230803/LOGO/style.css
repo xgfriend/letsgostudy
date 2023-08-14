@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 2rem auto 0; /*상 좌우 하 패딩도 원리가 같음*/
+    /* margin:0; 아래 4가지를 모두 0으로
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom: 0; */
+    /* margin: 0 auto 0 0; 상 우 하 좌
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto; */
+    height: 60px;
+}
+
+.item li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+
+  .item.active{
+    background-color: blue;
+    color: white;
+    flex: 5 1 0;
+}
+
+.item{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    /*transition: all 0.25s cubic-bezier(0.42, 0, 0, 1);
+    padding: 0 1rem;
+    z-index: 1;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none; */
+}

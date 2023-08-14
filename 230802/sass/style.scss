@@ -1,0 +1,35 @@
+*{ //style.css에서 수정하지 말고 scss에서 수정해야 함
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card{ //nesting했다: 담고, 담고, 담았다라는 뜻
+    display: flex;
+    flex-direction: column; //display: flex;가 있어야지만 사용 가능한 명령어 > 축을 변경
+    width: 600px; //가로폭 제한
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 6px solid red;
+    &:hover{
+        border: 6px solid blue;
+    }
+    &-img{ //.card를 &로 대체 > 반복되는 작업을 피하기 위해
+        height: 300px;
+    }
+    &-content{
+        padding: 1rem;
+    }
+    &-title{
+        font-size: 30px;
+    }
+    &-text{
+        font-size: 18px;
+    }
+}

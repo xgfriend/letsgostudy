@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@500&family=Signika&display=swap');
+:root{
+    --bs-font-sans-serif:'Noto Sans KR', sans-serif
+}
+.hero{
+    background-image: url(https://img.etoday.co.kr/pto_db/2021/09/20210904154220_1662916_527_357.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    z-index: 0;
+}
+.hero::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index:-1;
+    background-color: rgba(0,0,0,0.5);
+}

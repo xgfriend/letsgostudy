@@ -1,0 +1,69 @@
+*{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*여기까지는 화면을 꽉 채우는 행동*/
+    position: relative;
+    display: flex; /*화면에 적힌 글을 정렬해 주는 용도 align-items까지*/
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    position: absolute;
+    content:'';    
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.8));
+    width: 100%;
+    height: 100%;
+}
+.content{
+    color: white;
+    z-index: 10;
+    width: 50%;
+    text-align: center;
+}
+.mouse{
+    position: fixed; /*부모, 자식 관계를 떠나서 브라우저 크기에 맞춰서 고정됨*/
+    bottom:90px; /*고정된 크기는 아래에서 90px*/
+    z-index: 100;
+    width: 30px; /*크기 부여*/
+    height: 60px; /*상동*/
+    border:3px solid white;
+    border-radius: 100px;
+}
+.dot{ /*움직이고 있는 dot > 얘 부모는 mouse */
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position:absolute;
+    bottom: 5px; /* mouse를 기준으로 아래에서 5px 떨어져 있음 */
+    left: 50%; /* 부모 center 기준 left 50% 떨어지게 됨*/
+    transform: translateX(-50%); /* 그래서 본인 size에서 -50% 왼쪽으로 가야 됨*/
+    border-radius: 0.5rem;
+    animation: pingpong 1s infinite alternate ease-in-out /*ease-in-out은 공의 탄력을 제어함 > 개발자 도구 애니메이션에서 조정하면 달라지는 동적
+
+    /* 완전히 센터로 보내는 공식
+    position: absolute; > 보통 이 넷은 정렬에 있어서 짝꿍이라고 생각하면 됨
+    top: 50%
+    left: 50%;
+    transform: translate(-50%, -50%)
+    */
+}
+@keyframes pingpong {
+    0%{
+        bottom: 5px;
+    }
+    100%{
+        bottom: 40px;
+    }
+}

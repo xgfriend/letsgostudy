@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:ital,wght@1,300&family=Signika&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Signika', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    cursor: pointer;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start; /*flex-direction이 column이어야 함*/
+    background-color: rgb(89, 106, 121);
+    padding: 1rem;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 600px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#header{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#header h1{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#header h1 .icon{
+    color: darkblue;
+}
+
+.input-wrapper{
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 0 1px darkblue;
+    border-radius: 0.5rem;
+}
+
+.input-wrapper #add-todo{
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 0; /*테두리 없애기*/
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.input-wrapper #add-todo:focus {
+    outline: 0; /*border 아님*/
+    box-shadow: 0 0 0 3px darkblue;
+}
+
+.input-wrapper .add-button{
+    border: 0;
+    display: flex;
+    padding: 0.74rem 1rem;
+    max-width: 80px;
+    white-space: nowrap;/*강제로 한 줄로 만듦*/
+    justify-content: center;
+    font-weight: bold;
+    background-color: darkblue;
+    color: white;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+#list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item{
+    position: relative;
+    display: flex;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.list-item::before{
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url('https://api.iconify.design/mdi/check-bold.svg') no-repeat 0 center / contain;
+    left: 0.5rem
+}
+
+.list-delete{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    background-color: darkblue;
+    border: 0;
+    border-radius: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.list-item.checked{
+    color:gray;
+    opacity: 0.2;
+}
+
+.list-item.checked .list-delete{
+    background-color: gray;
+}

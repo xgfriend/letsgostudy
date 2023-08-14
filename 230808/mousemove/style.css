@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /*none: cursor 자체를 안 보이게*/
+}
+
+body{
+    background-color: white;
+    background-image: url(https://images.pexels.com/photos/17504616/pexels-photo-17504616.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dot{
+    --size: 300px; /*css에서 변수 처리는 -- */
+    width: var(--size);
+    height: var(--size);
+    position: fixed;
+    background-color: green; /*사진이 밝으면 밝은 색으로, 어두우면 어두운 색으로*/
+    border-radius:var(--size);
+    transition: all 1ms linear;
+    z-index: -1;
+    mix-blend-mode: soft-light;
+}
+
+.title{
+    font-size: 120px;
+    color: white;
+    letter-spacing: -1px;
+    word-spacing: -10px;
+    line-height: 1;
+    mix-blend-mode: hard-light;
+    user-select: none; /*더블 클릭 할 때 글자가 선택되는 일을 방지*/
+}
+
+.dot .bubble{
+    display: block;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    animation: bubble 200ms forwards linear;
+    background-color: white;
+    border-radius: var(--size);
+    transform: scale(100);
+}
+
+@keyframes bubble {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(2);
+        opacity: 0;
+    }
+}

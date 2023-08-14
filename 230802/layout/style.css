@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{ /*html에 나오는 사진 제어*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+figure{
+    flex: 1 1 0; /*grow(확장) shrink(축소) basis(width)*/
+    height: 100%;
+    padding: 1rem;
+}
+
+.content{
+    font-size: 20px;
+    color: rgb(9, 9, 110);
+    padding: 3rem; /*자연스럽게 사진을 밀어냄*/
+    flex: 1 1 0; /*figure와 사이즈가 같게 해 주면 50%씩 나눠 가짐*/
+}
+
+.content h2{
+    font-size: 60px;
+    color: rgb(108, 86, 231);
+}
+
+section{
+    margin: 2rem;
+    width: 100%;
+    height: 100vh; /*vh: html의 높이*/
+    display: flex; /*flex의 기본값: 수평*/
+    border-radius: 1rem;
+    align-items: center; /*모든 것을 center로*/
+    flex-direction: row; /*방향*/
+    background-color: rgb(238, 238, 205);
+}
+
+section:nth-child(even){/*section의 짝수(even)마다 효과*/
+    flex-direction: row-reverse; /*지그재그*/
+    background-color: gray;
+}

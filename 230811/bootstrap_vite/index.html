@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
+      <div class="container-fluid">
+          <!-- brand, icon -->
+        <a class="navbar-brand text-primary" href="#"><i class="bi bi-geo"></i>산책하개</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Contect</a>
+            </li>
+          </ul>
+          <!-- 버튼 추가 -->
+          <div class="d-flex gap-5 ms-auto">
+              <button class="btn btn-right">login</button>
+              <button class="btn btn-primary">Try for free</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- swiper -->
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="hero d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+            <div class="container text-white">
+                <h1 class="display-4 fw-bolder">우리 개랑 산책하개</h1>
+                <p class="col-lg-10">반려견 산책서비스는 반려견의 건강과 행복을 위해 필요한 서비스입니다. 저희 서비스는 전문적인 산책 도우미가 반려견과 함께 산책을 하며, 반려견의 건강 상태와 행동 패턴을 체크하여 적절한 케어를 제공합니다. 또한, 반려견의 건강 상태와 행동 패턴을 기록하여 주인님께 제공하며, 반려견의 건강 상태를 체크할 수 있도록 도와드립니다. 저희 서비스는 건강한 반려견을 위해 필요한 서비스이니 많은 이용 부탁드립니다
+                </p>
+                <button class="btn btn-primary btn-lg">산책하러 가기</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="hero second d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+            <div class="container text-white">
+                <h1 class="display-4 fw-bolder">유진이가 귀엽습니다</h1>
+                <p class="col-lg-10">누구 닮아서 이렇게 귀엽니
+                </p>
+                <button class="btn btn-primary btn-lg">산책하러 가기</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="hero third d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+            <div class="container text-white">
+                <h1 class="display-4 fw-bolder">장원영도 귀엽긴 해</h1>
+                <p class="col-lg-10">사실 아이브가 다 좋아
+                </p>
+                <button class="btn btn-primary btn-lg">산책하러 가기</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar
+  <div class="swiper-scrollbar"></div> -->
+</div>
+    <!-- hero, jumbotron -->
+    <!-- <div class="hero d-flex align-items-center justify-content-center">
+      <div class="container-fluid">
+          <div class="container text-white">
+              <h1 class="display-4 fw-bolder">우리 개랑 산책하개</h1>
+              <p class="col-lg-10">반려견 산책서비스는 반려견의 건강과 행복을 위해 필요한 서비스입니다. 저희 서비스는 전문적인 산책 도우미가 반려견과 함께 산책을 하며, 반려견의 건강 상태와 행동 패턴을 체크하여 적절한 케어를 제공합니다. 또한, 반려견의 건강 상태와 행동 패턴을 기록하여 주인님께 제공하며, 반려견의 건강 상태를 체크할 수 있도록 도와드립니다. 저희 서비스는 건강한 반려견을 위해 필요한 서비스이니 많은 이용 부탁드립니다
+              </p>
+              <button class="btn btn-primary btn-lg">산책하러 가기</button>
+          </div>
+      </div>
+    </div> -->
+    <!-- features -->
+      <div class="container-fluid bg-light py-4">
+          <div class="container">
+              <header class="text-center">
+                  <h2 class="display-3 fw-bolder">Features</h2>
+                  <p>산책이 반려견에게 주는 3가지 장점!</p>
+              </header>
+              <div class="row">
+                  <div class="col-md-4 col-sm-12 p-4">
+                      <div class="badge text-bg-primary fs-5 mb-3 shadow-lg">
+                          Benefit 1
+                      </div>
+                      <h3>건강한 반려견 유지</h3>
+                      <p>산책은 반려견의 건강을 유지하는 데 중요합니다. 적절한 운동량을 유지하면서 근육을 강화하고 체중을 조절할 수 있습니다. 또한, 산책은 반려견의 심리적 건강에도 도움이 됩니다.</p>
+                  </div>
+                  <div class="col-md-4 col-sm-12 p-4">
+                      <div class="badge text-bg-primary fs-5 mb-3 shadow-lg">
+                          Benefit 2
+                      </div>
+                      <h3>사회성 향상</h3>
+                      <p>산책은 반려견의 사회성을 향상시키는 데 도움이 됩니다. 다른 반려견이나 사람들과 만나면서 사회성을 키울 수 있습니다.</p>
+                  </div>
+                  <div class="col-md-4 col-sm-12 p-4">
+                      <div class="badge text-bg-primary fs-5 mb-3 shadow-lg">
+                          Benefit 3
+                      </div>
+                      <h3>주인과의 유대감 형성</h3>
+                      <p>산책은 반려견과 주인 간의 유대감을 형성하는 데 도움이 됩니다. 함께 시간을 보내면서 서로에 대해 더 잘 알아가고, 서로에게 더욱 친밀해질 수 있습니다.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- image -->
+          <div class="container my-5">
+              <div class="card shadow">
+                  <figure class="ratio ratio-21x9 m-0">
+                      <img src="https://images.chosun.com/resizer/nUg0WdS3bpk1__B5mIYxVZBolhc=/530x570/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/E2NG677RGAJEJHTML75MFEXHAA.png" class="card-img object-fit-cover" alt="...">
+                  </figure>
+                  <div class="card-img-overlay d-flex align-items-center top-50 start-50 translate-middle">
+                    <h5 class="display-3 text-white">우리 개랑 산책하개</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Pricing -->
+      <div class="container-fluid py-5" id="pricing">
+          <div class="container">
+              <header class="text-center">
+                  <h2 class="display-3 fw-bolder">Pricing</h2>
+                  <p>합리적인 가격으로 강아지를 지칠 때까지 산책시켜 드립니다</p>
+              </header>
+              <div class="row">
+                  <div class="offset-md-2 col-md-8 col-sm-12">
+                      <div class="row">
+                          <div class="col-md-6 col-sm-12">
+                              <div class="card">
+                                  <div class="card-header">
+                                    일반
+                                  </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">2시간 5만 원</h5>
+                                    <p class="card-text">내 강아지를 키우고 싶다</p>
+                                    <a href="#" class="btn btn-primary">서비스 이용하기</a>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="col-md-6 col-sm-12">
+                              <div class="card border-primary">
+                                  <div class="card-header text-bg-primary">
+                                    프리미엄
+                                  </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">시가</h5>
+                                    <p class="card-text">내 강아지처럼 모시겠습니다</p>
+                                    <a href="#" class="btn btn-primary">서비스 이용하기</a>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+<!-- contact -->
+      <div class="container-fluid py-5">
+          <div class="container">
+              <header class="text-center">
+                  <h4 class="display-3 fw-bolder">Contant</h2>
+                  <p>합리적인 가격으로 강아지를 지칠 때까지 산책시켜 드립니다.</p>
+              </header>
+              <div class="row">
+                  <figure class="col-md-6 col-sm-12">
+                      <img class = "odject-fit-cover w-100" src="https://images.chosun.com/resizer/nUg0WdS3bpk1__B5mIYxVZBolhc=/530x570/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/E2NG677RGAJEJHTML75MFEXHAA.png" class="card-img object-fit-cover" alt="...">
+                  </figure>
+                  <div class="col-md-6 col-sm-12">
+                      <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                          <div class="col-sm-6">
+                            <label for="firstName" class="form-label">성</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              Valid first name is required.
+                            </div>
+                          </div>
+              
+                          <div class="col-sm-6">
+                            <label for="lastName" class="form-label">이름</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              Valid last name is required.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="email" class="form-label">이메일 <span class="text-body-secondary">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                              Please enter a valid email address for shipping updates.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="address" class="form-label">주소</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                            <div class="invalid-feedback">
+                              Please enter your shipping address.
+                            </div>
+                          </div>
+              
+                          <div class="col-12">
+                            <label for="address2" class="form-label">상세주소 <span class="text-body-secondary">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                          </div>
+              
+                          <div class="col-md-5">
+                            <label for="country" class="form-labeㄴl">국가</label>
+                            <select class="form-select" id="country" required="">
+                              <option value="">Choose...</option>
+                              <option>한궉</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please select a valid country.
+                            </div>
+                          </div>
+              
+                          <div class="col-md-4">
+                            <label for="state" class="form-label">지역</label>
+                            <select class="form-select" id="state" required="">
+                              <option value="">Choose...</option>
+                              <option>대전</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please provide a valid state.
+                            </div>
+                          </div>
+              
+                          <div class="col-md-3">
+                            <label for="zip" class="form-label">우편주소</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Zip code required.
+                            </div>
+                          </div>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="same-address">
+                          <label class="form-check-label" for="same-address">주소가 맞습니다.</label>
+                        </div>
+              
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="save-info">
+                          <label class="form-check-label" for="save-info">다음에도 동일 정보로 사용하기</label>
+                        </div>
+              
+                        <hr class="my-4">
+              
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                      </form>
+                    </div>
+              </div>
+          </div>
+      </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

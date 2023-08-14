@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*div는 display:block 성질을 가지고 있음*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.list{
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.list-item{
+    padding: 1rem;
+    box-shadow: 0 0 0 3px gray;
+}
+
+.list-item.selected{
+    box-shadow: 0 0 0 3px red;
+}
+

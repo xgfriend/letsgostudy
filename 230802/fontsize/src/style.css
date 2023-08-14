@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.act{
+    color: brown;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 13px -10px gray;
+    font-weight: 600;
+}
+
+.active{
+    font-size: 70px;
+    color: aqua;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: ghostwhite;
+    border-radius: 2rem;
+    border-style: hidden;
+}
+
+.actives{
+    font-size: 70px;
+    color:dodgerblue;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: ghostwhite;
+    border-radius: 2rem;
+    border-style: hidden;
+}

@@ -1,0 +1,69 @@
+html
+head/body로 나뉨
+head는 css랑 연결
+body는 css와 연결해 주고, 여기서 모든 작업 설정
+
+css
+img는 사진 / .img는 .img를 찾음
+
+flex-wrap은 줄 바꿈
+
+flex-grow: 성장 가능
+flex-shrink: 성장 막음
+flex-basis:
+
+@media (min-width: 1024px) {
+/*내용*/
+}
+
+!의 자동완성 중 중요한 내용
+viewport = 화면을 보는 내용
+
+javascript
+
+alert () 경고창 띄우기
+
+let name="어깨 아프다" /*변수(변할 수 있는 수), 변수 선언하는 법 2 "let=var" */
+/* name = '다른 이름' / 하게 되면 어깨아프다가 아닌 다른이름으로 띄워짐*/
+name = '일 가기 싫다'
+alert(name)/*경고창 띄우기 문자를 쓸 때는 무조건 따옴표('' "") 작따 추천 큰따랑 구분을 주기 위해*/
+/*var를 선언 후 alert 괄호 따옴표 후 선언하면 alert 변수가 띄워짐*/
+
+constant = 상수 / 변하지 않는 수
+const name="어깨 아프다"
+name = '일 가기 싫다'
+alert(name)
+> error
+
+const name="이름"
+alert(name)
+
+const name="이름"
+console.log(name)
+ > html - f12 - console
+
+// 주석을 한 줄로 작성할 때
+
+/** (자동으로 닫기가 생김)
+*주석을 여러 줄로 걸쳐서
+*작성할 때는 이렇게 씁니다
+*/
+
+예약어: java에서 이미 명령어로 정해져 있는 것들/변수명 불가능 ex. this, window, in
+ - "자바 스트립스 예약어"로 검색
+ - 굳이 쓰고 싶으면 앞에 언더바(_)
+변수명은 띄어쓰기 불가능 / 숫자+명 불가능
+number1 > number_1, numberOne
+
+오류가 나면 빨간 밑줄(css) 혹은 명령어 아래 ... 표시(java)
+
+let variables = 'content'
+variables = 'another content'
+console.log(variables)
+
+const content = "content"
+content = 'another' > error
+
+java는 순서대로 실행하기 때문에 작성 순서가 아주아주 중요
+
+dom이란 모든 요소 객체 document object model

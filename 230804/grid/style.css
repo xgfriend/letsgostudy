@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*내가원하는사이즈를넣었을때입력이된다*/
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(253, 234, 237);
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px;
+    gap: 1rem;
+    height: 100vh;
+    /* grid-template-columns: repeat(3, 15%); */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* 1fr 1fr 1fr일 때는 가로로 세 칸으로 나뉘기 때문에
+    grid 1부터 5는 가로 세 칸 세로 두 줄의 형태로 배치된다
+    만약 1fr 2fr 1fr이라면 가로 두 번째 칸이 두 칸을 차지한다*/
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* repeat(칸의 개수, 칸의 크기)
+    /* grid-template-columns: 100px 1fr 100px; */
+    /* grid-template-columns: repeat(auto-fill, 15%); */
+    /* column-gap: 1rem;
+    row-gap: 2rem */
+    /* grid-template-rows: 1fr 2fr; */
+    /* row는 세로를 의미하기 때문에 2번째 줄에 있는 항목들은
+    세로칸을 2칸씩 가져가게 된다 */
+    /* grid-template-rows: repeat(2, 200px);
+    grid-gap: 1rem;
+    gap: 2rem; */
+    /* justify-items: center; /* start, center, end 등이 있다 */
+    /* align-items: center; start, center, end 등이 있다 */
+    /* grid-template-columns: 200px 1fr 300px; */
+    /* grid-template-rows: 100px 1fr 100px; */
+    /* grid-template-areas: "logo menu menu" "content content sidebar" "footer footer footer"; */
+    grid-template-areas: "logo" "menu" "content" "sidebar" "footer"
+    /* 예를 들어 빈 공간을 만들고 싶을 때는 위의 코드 중 ". footer footer"는 .을 찍은 공간이 비어지게 된다 */
+}
+
+.grid-item{
+    background-color: deepskyblue;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.grid-item:nth-child(1){
+    grid-area: logo;
+}
+
+.grid-item:nth-child(2){
+    /* grid-column: 2/4; */
+    grid-area: menu;
+}
+
+.grid-item:nth-child(3){
+    /* grid-column: 1/3;
+    grid-row: 2/4; */
+    grid-area: content;
+}
+
+.grid-item:nth-child(4){
+    grid-area: sidebar;
+}
+
+.grid-item:nth-child(5){
+    grid-area: footer;
+}
+
+
+@media screen and (min-width: 1024px){
+    .grid-container{
+        grid-template-areas: "logo menu menu" "content content sidebar" "footer footer footer"
+    }
+}

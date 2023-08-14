@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.active{
+    font-size: 60px;
+    color: rgb(6, 4, 143) !important; /*java 순위에서 제일 우선권으로 가지고 가는 명령어: !important */
+    font-weight: 100;
+}
