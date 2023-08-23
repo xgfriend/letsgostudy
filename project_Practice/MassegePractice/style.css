@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+.message{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    background-color: aquamarine;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.icon{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+}

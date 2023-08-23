@@ -1,6 +1,0 @@
-깃허브 파일 업로드 테스트
-
-- github.md //파일 생성
-- git add -A //추가
-- git commit -m "github 명령어 파일 추가" //파일 설명
-- git push //저장소 업로드
