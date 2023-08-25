@@ -357,5 +357,10 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 0.5rem;
+    margin-bottom: 100px;
+}
+
+.swiper-wrapper{
+    padding: 100px;
 }
 
